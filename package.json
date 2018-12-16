@@ -1,0 +1,24 @@
+{
+  "name": "fastify-react-undefined-fulfillment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "build:prod": "cross-env NODE_ENV=production next build",
+    "dev": "node example.js",
+    "serve": "npm run build:prod && cross-env NODE_ENV=production node example.js",
+    "test": "npm run build:prod && cross-env NODE_ENV=production tap test.js && cat unfulfilled.ndjson"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "fastify": "^1.13.2",
+    "fastify-react": "^2.1.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "tap": "^12.1.1"
+  }
+}
